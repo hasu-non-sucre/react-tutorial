@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  node:
+    image: node:lts
+    container_name: node
+    volumes:
+      - ./:/usr/src/app
+    command: sh -c "cd react-tutorial && npm start"
+    working_dir: /usr/src/app/
+    ports:
+      - "3000:3000"
