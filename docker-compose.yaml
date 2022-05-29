@@ -6,7 +6,7 @@ services:
     container_name: node
     volumes:
       - ./:/usr/src/app
-    command: sh -c "cd react-tutorial && npm start"
+    command: sh -c "cd tiktoktoe && npm install && npm start"
     working_dir: /usr/src/app/
     ports:
       - "3000:3000"
